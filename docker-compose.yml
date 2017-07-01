@@ -1,0 +1,14 @@
+version: '2'
+services:
+  squid:
+    container_name: squid
+    hostname: squid
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3128:3128"
+#    volumes:
+#      - /srv/docker/squid/cache:/var/spool/squid3
+#    restart: always
+
